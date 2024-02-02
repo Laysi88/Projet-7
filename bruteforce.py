@@ -3,7 +3,7 @@ import time
 
 
 def calculate_total_profit(combination):
-    return sum(float(action["profit"]) * int(action["price"]) / 100 for action in combination)
+    return sum(float(action["profit"]) * float(action["price"]) / 100 for action in combination)
 
 
 start_time = time.time()  # Enregistrez le temps de début
@@ -30,7 +30,7 @@ for i in range(2**num_actions):
     binary_representation = bin(i)[2:].zfill(num_actions)
     combination = [data[j] for j in range(num_actions) if binary_representation[j] == "1"]
 
-    current_price = sum(int(action["price"]) for action in combination)
+    current_price = sum(float(action["price"]) for action in combination)
 
     # Vérifier si la combinaison respecte la contrainte de prix
     if current_price <= 500:
