@@ -26,7 +26,7 @@ total_price = 0  # Initialiser le prix total ici
 
 # Générer toutes les combinaisons possibles d'actions
 num_actions = len(data)
-for i in range(2**num_actions):
+for i in range(1000000):
     binary_representation = bin(i)[2:].zfill(num_actions)
     combination = [data[j] for j in range(num_actions) if binary_representation[j] == "1"]
 
