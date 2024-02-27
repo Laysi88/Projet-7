@@ -13,7 +13,7 @@
 
 ### Bruteforce ###
 
-Le bruteforce ne traîte que les données du fichier "data_druteforce.csv" 
+- Le bruteforce ne traîte que les données du fichier "data_druteforce.csv" 
 
 ```python bruteforce.py ```
 
