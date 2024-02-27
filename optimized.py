@@ -62,17 +62,15 @@ def knapsack(actions):
             liste_actions.append(action)
 
     # Afficher le profit total
-    print(f"Profit total : {max_profit}")
+    print("Profit total :", round(max_profit, 2))
     # Afficher le budget utilisé
-    print(f"Budget utilisé : {500 - budgetmax}")
-
-    for action in liste_actions:
-        print(action.name)
+    print("Budget utilisé :", round(500 - budgetmax, 2))
+    print("Actions sélectionnées :", [action.name for action in liste_actions])
 
     # end time
     end_time = time.time()
     # print the time
-    print("Time:", end_time - start_time)
+    print("Time:", end_time - start_time, "secondes")
 
 
 if __name__ == "__main__":
