@@ -1,0 +1,28 @@
+# Projet 7 Openclassrooms : AlgoInvest&Trade  #
+
+## Prérequis: ## 
+
+- IDE (exemple:VSCODE ou Pycharm ou tout autre IDE de votre choix)
+- Python: disponible sur https://www.python.org/
+
+## Installation: ##
+- Clonez ce repository:  
+```git clone https://github.com/Laysi88/Projet-7.git ```
+
+## Utilisation:  ##
+
+### Bruteforce ###
+
+Le bruteforce ne traîte que les données du fichier "data_druteforce.csv" 
+
+```python bruteforce.py ```
+
+### Optimized ### 
+
+La version Optimized demande d'entrer le nom du fichier à traiter.
+
+- Pour le dataset1:  
+```python optimized.py dataset1```
+
+- Pour le dataset2:  
+```python optimized.py dataset2```
